@@ -1,9 +1,9 @@
 const dbConfig = {
-  host: 'localhost',
-  user: 'postgres',
-  database: 'todo',
-  password: 'postgres',
-  port: 5432
-};
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+}
 
 module.exports = dbConfig;
+//postgres://{user}:{password}@{hostname}:{port}/{database-name}

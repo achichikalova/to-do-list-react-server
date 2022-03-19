@@ -75,6 +75,6 @@ app.put('/api/tasks/:id', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log('ToDo app listening on PORT 3001');
+app.listen(process.env.PORT, () => {
+  console.log('ToDo app listening...');
 })
